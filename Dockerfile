@@ -31,6 +31,9 @@ FROM alpine:3
 # Upgrade base image
 RUN set -ex && apk --update --no-cache upgrade
 
+# Install curl for health check
+RUN set -ex && apk add --update --no-cache curl
+
 # Add user and setup directories for moneroblock
 ARG MONERO_BLOCK_USER="moneroblock"
 RUN set -ex && adduser -Ds /bin/bash ${MONERO_BLOCK_USER}
@@ -44,7 +47,7 @@ COPY --chown=${MONERO_BLOCK_USER}:${MONERO_BLOCK_USER} --from=build /moneroblock
 # Expose web port
 EXPOSE 31312
 
-# Add HEALTHCHECK against default web endpoint
+# Add HEALTHCHECK against get_info endpoint
 HEALTHCHECK --interval=30s --timeout=5s CMD curl --fail http://localhost:31312 || exit 1
 
 # Start moneroblock with default daemon flag, to be overridden by end-users
