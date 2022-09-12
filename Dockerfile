@@ -48,5 +48,5 @@ EXPOSE 31312
 HEALTHCHECK --interval=30s --timeout=5s CMD curl --fail http://localhost:31312 || exit 1
 
 # Start moneroblock with default daemon flag, to be overridden by end-users
-ENTRYPOINT ["moneroblock"]
+ENTRYPOINT ["moneroblock", "--bind", "0.0.0.0:31312"]
 CMD ["--daemon", "node.sethforprivacy.com:18089"]
