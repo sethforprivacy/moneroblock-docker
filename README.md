@@ -21,8 +21,8 @@ https://hub.docker.com/r/sethsimmons/moneroblock
 
 ## Tags
 
-`latest`: The latest branch version of MoneroBlock from https://github.com/duggavo/MoneroBlock, built on an Alpine base image  
-`branch_name`: The version corresponding with the branch from https://github.com/duggavo/MoneroBlock, built on an Alpine base image  
+`latest`: The latest branch version of MoneroBlock from https://github.com/duggavo/MoneroBlock/tags, built on an Alpine base image  
+`vx.x.x`: The version corresponding with the tag from https://github.com/duggavo/MoneroBlock/tags, built on an Alpine base image  
 
 ## Recommended usage
 
