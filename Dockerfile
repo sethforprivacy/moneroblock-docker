@@ -3,10 +3,10 @@ LABEL author="seth@sethforprivacy.com" \
       maintainer="seth@sethforprivacy.com"
 
 # Set MoneroBlock branch or tag to build
-ARG MONERO_BLOCK_BRANCH=v0.1.1
+ARG MONERO_BLOCK_BRANCH=v0.1.2
 
 # Set the proper HEAD commit hash for the given branch/tag in MONERO_BLOCK_BRANCH
-ARG MONERO_BLOCK_COMMIT_HASH=de08fa10be7706c66f2374baa4d2bafc61fbe49e
+ARG MONERO_BLOCK_COMMIT_HASH=7c8172d725390d96b71dddd8f4316a3f275c32d5
 
 # Upgrade base image
 RUN set -ex && apk --update --no-cache upgrade
