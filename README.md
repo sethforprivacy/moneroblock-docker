@@ -2,6 +2,8 @@
 
 A simple and straightforward Dockerized [MoneroBlock](https://github.com/duggavo/MoneroBlock) built from source and exposing standard ports.
 
+NOTE: The upstream repo hasn't seen a commit in 2y, so I am archiving this repo. Use at your own risk!
+
 ## Actions
 
 [![Weekly Update Rebuild](https://github.com/sethforprivacy/moneroblock-docker/actions/workflows/update-base-image.yml/badge.svg)](https://github.com/sethforprivacy/moneroblock-docker/actions/workflows/update-base-image.yml)  
